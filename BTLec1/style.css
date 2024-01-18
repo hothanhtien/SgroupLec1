@@ -1,0 +1,18 @@
+.wide {
+    width: 550px;
+    margin-left: 350px;
+}
+.content__Item--image {
+    width: 550px;
+}
+.termn span{
+    font-weight: bold;
+}
+
+.img--AlignItem {
+    width: 350px;
+    margin-left: 100px;
+}
+.cacdong {
+    font-weight: bold;
+}
