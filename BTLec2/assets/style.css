@@ -1,52 +1,55 @@
 * {
     margin: 0;
     padding: 0;
-    /* font-family: 'Courier New', Courier, monospace; */
+    font-family: 'Inter', sans-serif;
 }
 
-.wide {
-    width: 1330px;
+.wide1 {
+    width: 1300px;
     margin: 0 auto;
 }
 
 .header {
-    height: 40px;
+ 
     background-color: rgb(255, 255, 255);
-    padding: 70px 0;
+    padding: 70px ;
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
     position: fixed;
-    width: 100%;
+     width: 100%;
     top: 0;
-
- z-index: 5; 
-    /* transition-delay: 0s;
+    transition: height 1s ease; 
+    transition-delay: 0s;
     transition-duration: 0.4s;
     transition-property: all;
-    transition-timing-function: ease;  */
-    transition: height 0.4s ease, padding 0.4s ease, font-size 0.4s ease, background-color 0.4s ease;
+    transition-timing-function: ease;
+     z-index: 5; 
 }
-
-.header.scrolled {
-    height: 20px; /* Điều chỉnh kích thước mới của header khi cuộn xuống */
-    padding: 20px 0; /* Điều chỉnh padding để giữ nội dung ở trung tâm */
-    font-size: 14px; /* Điều chỉnh kích thước font khi cuộn xuống */
-    background-color: rgba(255, 255, 255, 0.9); /* Màu nền mới khi cuộn xuống */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Bóng đổ mới khi cuộn xuống */
-  }
-
+.normalSize {
+    height: 40px;
+}
+.scroll-size {
+    padding: 20px 0;
+    padding-left: 68px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
 .content {
     margin-top: 160px;
 }
 .header .nameWeb {
+    /* float: left; */
+    /* display: inline-block; */
     margin-left: 0px;
+    margin-left: 127px;
 }
 
 .header .nameWeb a {
     text-decoration: none;
     color: black;
+    letter-spacing: 3px;
+    opacity: 0.9;
 }
 
 .header .nameWeb a span {
@@ -60,12 +63,15 @@
 }
 
 .header .linkSocial {
-    margin-right: 50px;
+    /* display: inline-block; */
+    /* float: right; */
+    margin-right: 27px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 24px;
     width: 100px;
+    padding-right: 230px;
 }
 
 .profile {
@@ -79,16 +85,18 @@
 }
 
 .summary {
+    
     display: flex;
     flex-direction: column;
     margin-left: 80px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .summary h1 {
     margin-top: 50px;
     font-size: 50px;
-    width: 501px;
+    width: 525px;
+    font-weight: 600;
 }
 
 .experience {
@@ -96,6 +104,7 @@
     display: flex;
     justify-content: space-around;
     padding-right: 55px;
+    font-weight: bold;
 }
 
 .experience span {
@@ -106,10 +115,12 @@
 
 .experience p {
     font-size: 18px;
+    font-weight: 100;
+    opacity: 0.6;
 }
 
 .aboutMe {
-    margin-top: 40px;
+    margin-top: 60px;
     position: relative;
 }
 
@@ -124,9 +135,11 @@
 
 .aboutMe p {
     margin-top: 30px;
-    font-size: 29px;
-    font-weight: 100;
-    opacity: 0.6;
+    color: #373737;
+    font-size: 24px;
+    line-height: 40px;
+    font-weight: 300;
+    opacity: 0.8;
 }
 
 .containerBtn {
@@ -149,6 +162,7 @@
     background-color:
         #f26464;
     color: #fff;
+    cursor: pointer;
 }
 
 .core {
@@ -172,11 +186,13 @@
 
 .allBtn {
     margin-top: 30px;
-    width: 85%;
+    width: 600px;
 }
-
+h3 {
+    opacity: 0.8;
+}
 .btnItem {
-    border: 0.1px solid black;
+    border: 0.1px solid rgb(183, 183, 183);
     display: inline-block;
     padding: 7px 20px;
     border-radius: 30px;
@@ -226,14 +242,16 @@
 }
 
 .workExperienceIem1 span {
-    font-weight: 800;
+    font-weight: 600;
 }
 
-.workExperienceIem1 h3 {
+.workExperienceIem1 .pp {
     margin: 20px 0;
-    font-weight: 100;
+    font-size: 25px;
 }
-
+.latestWorks {
+    margin-top: 180px;
+}
 .underlinedWorks {
     width: 150px;
     height: 2px;
@@ -249,18 +267,19 @@
 
 .workItem {
     margin: 20px;
-    width: 1200px;
-    height: 450px;
+    width: 1300px;
+    height: 520px;
     background-color:
         #f6f8fa;
     display: flex;
+    margin-left: 0;
 }
 
 .infoWork {
     width: 500px;
     margin-right: 150px;
-    margin-top: 50px;
-    margin-left: 50px;
+    margin-top: 70px;
+    margin-left: 70px;
 }
 
 .infoWork h4 {
@@ -271,10 +290,11 @@
     font-size: 20px;
     opacity: 0.6;
     margin: 30px 0;
+    line-height: 1.5;
 }
 
 .imageWork img {
-    width: 400px;
+    width: 515px;
     margin-top: 30px;
     margin-right: 30px;
 }
@@ -287,6 +307,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 100px;
 }
 
 .footer span {
