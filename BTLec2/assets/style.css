@@ -14,7 +14,7 @@
     background-color: rgb(255, 255, 255);
     padding: 70px ;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     font-size: 18px;
     position: fixed;
@@ -26,6 +26,11 @@
     transition-property: all;
     transition-timing-function: ease;
      z-index: 5; 
+}
+.containerHeader{
+    display: flex;
+    width: 1690px;
+    justify-content: space-between;
 }
 .normalSize {
     height: 40px;
