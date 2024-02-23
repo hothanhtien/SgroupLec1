@@ -1,0 +1,46 @@
+.body {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.den {
+    width: 200px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    /* background-color: black; */
+    flex-direction: column;
+    align-items: center;
+}
+
+.a1 {
+    width: 100%;
+    height: 200px;
+    border-radius: 50%;
+    border: #753838 1px solid;
+}
+
+.a2 {
+    width: 50%;
+    height: 100px;
+    background-color: aqua;
+}
+
+button {
+    margin-top: 100px;
+    margin-left: 20px;
+    padding: 20PX;
+    width: 170px;
+}
+.startOn {
+    background-color: blue
+}
